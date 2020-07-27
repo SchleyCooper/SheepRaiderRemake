@@ -26,7 +26,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private float groundDistance = 1.0f;
     [SerializeField]
-    private LayerMask environmentMask;
+    private LayerMask groundedMask;
 
     private void Awake()
     {
@@ -67,7 +67,7 @@ public class CharacterController : MonoBehaviour
         //smoothPosition = Vector3.Lerp(smoothPosition, targetPosition, Time.deltaTime * moveSpeed);
         //transform.position = smoothPosition;
 
-        if (Physics.Raycast(transform.position, -transform.up, groundDistance, environmentMask))
+        if (Physics.Raycast(transform.position, -transform.up, groundDistance, groundedMask))
         {
             isGrounded = true;
         }
@@ -81,13 +81,12 @@ public class CharacterController : MonoBehaviour
 
         //Debug.DrawRay(followCam.transform.position, followCam.transform.rotation * input.normalized * 3, Color.magenta);
         Debug.DrawRay(transform.position, transform.forward * input.magnitude * 3, Color.red);
-        Debug.DrawRay(transform.position, rb.position + movementDirection * moveSpeed, Color.green);
+        Debug.DrawRay(transform.position, movementDirection * moveSpeed, Color.green);
         //Debug.DrawRay(transform.position, transform.rotation * movementDirection * 2, Color.green);
     }
 
     private void FixedUpdate()
     {
-
         targetPosition = rb.position + movementDirection;
         //targetPosition = transform.rotation * movementDirection;
         targetPosition.y = 0;
@@ -102,6 +101,12 @@ public class CharacterController : MonoBehaviour
 
         // move
         smoothPosition = Vector3.Lerp(smoothPosition, targetPosition, Time.fixedDeltaTime * moveSpeed);
-        rb.MovePosition(rb.position + movementDirection.normalized * moveSpeed);
+        // rb.MovePosition(smoothPosition);
+        // rb.velocity = movementDirection.normalized * moveSpeed * Time.fixedDeltaTime;
+        // rb.AddForce(movementDirection * moveSpeed);
+
+        // rb.MovePosition(rb.position + movementDirection.normalized * moveSpeed * Time.fixedDeltaTime);
+        Vector3 newVel = movementDirection.normalized * moveSpeed + transform.up * rb.velocity.y;
+        rb.velocity = newVel;
     }
 }
