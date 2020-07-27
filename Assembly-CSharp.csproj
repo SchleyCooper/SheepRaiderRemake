@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Characters\Enemy\EnemySight.cs" />
+     <Compile Include="Assets\Scripts\Common\IInteractable.cs" />
+     <Compile Include="Assets\Scripts\Common\InteractableBase.cs" />
      <Compile Include="Assets\Scripts\Common\State.cs" />
      <Compile Include="Assets\Scripts\Common\StateMachine.cs" />
      <Compile Include="Assets\Scripts\Player\CharacterController.cs" />
