@@ -37,12 +37,19 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Characters\Enemy\EnemySight.cs" />
+     <Compile Include="Assets\Scripts\Characters\Player\CharacterController.cs" />
+     <Compile Include="Assets\Scripts\Characters\Player\InputController.cs" />
+     <Compile Include="Assets\Scripts\Characters\Player\InteractorController.cs" />
+     <Compile Include="Assets\Scripts\Characters\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Characters\Player\PlayerInventory.cs" />
+     <Compile Include="Assets\Scripts\Characters\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Common\HashIDs.cs" />
      <Compile Include="Assets\Scripts\Common\IInteractable.cs" />
      <Compile Include="Assets\Scripts\Common\InteractableBase.cs" />
      <Compile Include="Assets\Scripts\Common\State.cs" />
      <Compile Include="Assets\Scripts\Common\StateMachine.cs" />
-     <Compile Include="Assets\Scripts\Player\CharacterController.cs" />
-     <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Data\InputConfiguration.cs" />
+     <Compile Include="Assets\Scripts\Data\InputData.cs" />
      <Compile Include="Assets\Scripts\Test\Rotator.cs" />
      <Compile Include="Assets\Scripts\Test\TransformMatcher.cs" />
      <Compile Include="Assets\Scripts\UI\EnemyVisionImitator.cs" />

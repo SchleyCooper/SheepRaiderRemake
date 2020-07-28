@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 130160bc8c76a1b40ac00f0ccb5144da, type: 2}
 --- !u!1 &51946022
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,15 +309,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96421271}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00000065939236, y: 4.183274, z: 7.5425696}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00000065939236, y: 2.8532739, z: 7.5425696}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1206119286}
   - {fileID: 1486863067}
   - {fileID: 2115122503}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 306304472}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112947485
 GameObject:
@@ -336,7 +336,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &112947486
 MeshCollider:
@@ -504,6 +504,7 @@ GameObject:
   - component: {fileID: 209169666}
   - component: {fileID: 209169668}
   - component: {fileID: 209169667}
+  - component: {fileID: 209169669}
   m_Layer: 10
   m_Name: WhiteSheep
   m_TagString: Untagged
@@ -556,6 +557,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!195 &209169669
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209169665}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.75
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.5
+  m_BaseOffset: 0.75
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &256253644
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,6 +653,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256253644}
   m_CullTransparentMesh: 0
+--- !u!1 &306304471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 306304472}
+  m_Layer: 0
+  m_Name: CinemachineProfiles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &306304472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306304471}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 96421274}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &342492375
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +695,9 @@ GameObject:
   - component: {fileID: 342492376}
   - component: {fileID: 342492378}
   - component: {fileID: 342492377}
+  - component: {fileID: 342492381}
   - component: {fileID: 342492380}
+  - component: {fileID: 342492382}
   - component: {fileID: 342492379}
   m_Layer: 8
   m_Name: Ralph Wolf
@@ -726,6 +782,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f219720115907d468af348eb7aebd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!195 &342492381
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342492375}
+  m_Enabled: 0
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &342492382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342492375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e0b34d0df4031469c6aae0d18c669a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputData: {fileID: 11400000, guid: 93cd0e068e6bce445abf1fbe6d49db2a, type: 2}
 --- !u!1 &368772112
 GameObject:
   m_ObjectHideFlags: 3
@@ -1246,6 +1337,7 @@ GameObject:
   - component: {fileID: 679222883}
   - component: {fileID: 679222882}
   - component: {fileID: 679222885}
+  - component: {fileID: 679222886}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1311,7 +1403,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679222881}
-  m_LocalRotation: {x: -0.000000008739764, y: 0.98572254, z: -0.16837782, w: -0.000000051164587}
+  m_LocalRotation: {x: -0.000000005980293, y: 0.98572254, z: -0.16837782, w: -0.000000035010004}
   m_LocalPosition: {x: 0.00000065939236, y: 4.183274, z: 7.5425696}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1352,6 +1444,37 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &679222886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679222881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &744721972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,7 +2421,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206119284}
-  m_LocalRotation: {x: -0.0000000109555645, y: 0.98369557, z: -0.17984186, w: -0.00000005992453}
+  m_LocalRotation: {x: -0.0000000047667097, y: 0.98369557, z: -0.17984186, w: -0.000000026072854}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2449,6 +2572,7 @@ GameObject:
   - component: {fileID: 1358074328}
   - component: {fileID: 1358074327}
   - component: {fileID: 1358074326}
+  - component: {fileID: 1358074325}
   - component: {fileID: 1358074329}
   m_Layer: 9
   m_Name: SamSheepdog
@@ -2457,6 +2581,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!195 &1358074325
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358074324}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!136 &1358074326
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2860,7 +3006,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: 180, z: 0}
 --- !u!1 &1604764700
 GameObject:
@@ -3795,7 +3941,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115122501}
-  m_LocalRotation: {x: -0.000000004951528, y: 0.9900045, z: -0.14103623, w: -0.000000034757278}
+  m_LocalRotation: {x: -0.000000004951508, y: 0.9900045, z: -0.14103623, w: -0.00000003475714}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

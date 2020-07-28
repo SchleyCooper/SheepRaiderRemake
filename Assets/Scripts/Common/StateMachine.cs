@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class StateMachine<T>
+public class StateMachine<T>
 {
     protected T owner;
 

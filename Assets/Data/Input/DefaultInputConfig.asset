@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6968c1f29232a5b40878c832bc3709d9, type: 3}
+  m_Name: DefaultInputConfig
+  m_EditorClassIdentifier: 
+  faceButtonNorth: Fire1
+  faceButtonSouth: Jump
+  faceButtonWest: Fire2
+  faceButtonEast: Fire3
+  faceButton1: 
+  faceButton2: 
+  buttonLeft0: 
+  buttonLeft1: 
+  buttonLeft2: 
+  buttonLeft3: 
+  buttonRight0: 
+  buttonRight1: 
+  buttonRight2: 
+  buttonRight3: 
+  systemButton1: Cancel
+  systemButton2: 
+  systemButton3: Submit
+  directional1: Horizontal
+  directional2: Vertical
+  directional3: Mouse X
+  directional4: Mouse Y
+  directional5: Horizontal
+  directional6: Vertical
